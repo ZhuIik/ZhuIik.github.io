@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CourseMind — AI ассистент для преподавателей и студентов</title>
+  <meta name="description" content="CourseMind — AI-ассистент курса на основе материалов дисциплины. Для преподавателей и студентов: ответы, навигация и поддержка обучения." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#hero" aria-label="CourseMind, перейти к началу">CourseMind</a>
+
+      <nav class="nav" aria-label="Навигация по странице">
+        <a class="nav__link" href="#problem">Проблема</a>
+        <a class="nav__link" href="#solution">Решение</a>
+        <a class="nav__link" href="#features">Возможности</a>
+        <a class="nav__link" href="#how">Как работает</a>
+        <a class="nav__link" href="#usecases">Кейсы</a>
+        <a class="nav__link" href="#consult">Консультация</a>
+        <a class="nav__link" href="#contact">Демо</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">EdTech платформа</span>
+          <h1>AI-ассистент курса для преподавателей и студентов</h1>
+
+          <p class="hero__lead">
+            CourseMind помогает находить ответы в материалах дисциплины быстрее и делает поддержку курса
+            предсказуемой — без “знания всего”, только на основе контента курса.
+          </p>
+
+          <div class="hero__badges" aria-label="Ключевые особенности">
+            <span>Для преподавателей</span>
+            <span>Для студентов</span>
+            <span>На материалах курса</span>
+            <span>Снижение повторных вопросов</span>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Запросить демо</a>
+            <a class="btn btn--ghost" href="#consult">Записаться на консультацию</a>
+          </div>
+
+          <p class="hero__note">
+            Учебная версия: отправка форм имитируется, данные сохраняются локально.
+          </p>
+        </div>
+
+        <div class="hero__panel" aria-label="Превью продукта (макет)">
+          <div class="panel__top">
+            <span class="panel__dot"></span>
+            <span class="panel__dot"></span>
+            <span class="panel__dot"></span>
+            <span class="panel__title">CourseMind • Preview</span>
+          </div>
+
+          <div class="panel__body">
+            <div class="mini-card">
+              <div class="mini-card__title">Курс: Эконометрика</div>
+              <div class="mini-card__meta">Роль: Студент • Материалы: лекции + задания</div>
+            </div>
+
+            <div class="chat">
+              <div class="chat__msg chat__msg--user">Где в лекциях объясняется ADF-тест?</div>
+              <div class="chat__msg chat__msg--bot">
+                В демо это макет. В реальном продукте ассистент ссылается на конкретный раздел материалов курса.
+              </div>
+              <div class="chat__hint">Здесь только визуальная демонстрация интерфейса.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM (fixed: symptoms/impact) -->
+    <section id="problem" class="section section--alt">
+      <div class="container">
+        <span class="eyebrow">Контекст</span>
+        <h2>Проблема</h2>
+        <p class="section__lead">
+          Материалы курса разбросаны, а ответы на типовые вопросы постоянно повторяются.
+          В результате растёт нагрузка и снижается качество поддержки.
+        </p>
+
+        <div class="problemGrid">
+          <div class="problemCol">
+            <h3 class="miniTitle">Симптомы</h3>
+            <ul class="bullets">
+              <li>Поиск по PDF/слайдам не даёт быстрых ответов</li>
+              <li>Вопросы дублируются в чатах и комментариях</li>
+              <li>Контекст “к какой лекции относится” теряется</li>
+            </ul>
+          </div>
+
+          <div class="problemCol">
+            <h3 class="miniTitle">Последствия</h3>
+            <ul class="bullets">
+              <li>Больше времени на подготовку и разбор тем</li>
+              <li>Перегруз преподавателей и ассистентов</li>
+              <li>Разные ответы на один и тот же вопрос</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION (fixed: steps + example) -->
+    <section id="solution" class="section">
+      <div class="container">
+        <span class="eyebrow">Подход</span>
+        <h2>Решение</h2>
+        <p class="section__lead">
+          CourseMind — ассистент, который помогает отвечать и ориентироваться по материалам курса.
+          В учебной версии это демонстрация интерфейса и сценариев.
+        </p>
+
+        <div class="solutionGrid">
+          <div class="solutionSteps">
+            <div class="stepCard">
+              <div class="stepNum">1</div>
+              <div>
+                <h3>Фокус на материалах курса</h3>
+                <p>Ассистент работает в рамках дисциплины, а не “вообще обо всём”.</p>
+              </div>
+            </div>
+
+            <div class="stepCard">
+              <div class="stepNum">2</div>
+              <div>
+                <h3>Роли</h3>
+                <p>Студенту — объяснить и подсветить главное. Преподавателю — стандартизировать ответы.</p>
+              </div>
+            </div>
+
+            <div class="stepCard">
+              <div class="stepNum">3</div>
+              <div>
+                <h3>Единая точка входа</h3>
+                <p>Вопросы, пояснения и правила курса — в одном месте, без хаоса по чатам.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="solutionExample">
+            <div class="chatBox" aria-label="Пример">
+              <div class="chatBox__title">Пример</div>
+              <div class="chatBox__msg chatBox__msg--q">“Где в лекциях объясняется ADF-тест?”</div>
+              <div class="chatBox__msg chatBox__msg--a">
+                “В лекции 5 есть раздел про стационарность и ADF. Дальше — пример на остатках регрессии.” (демо)
+              </div>
+              <div class="chatBox__hint">В учебной версии — демонстрационный блок.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES (fixed: clear list) -->
+    <section id="features" class="section section--alt">
+      <div class="container">
+        <span class="eyebrow">Функции</span>
+        <h2>Возможности</h2>
+        <p class="section__lead">
+          Четыре модуля, которые понятны с первого взгляда — что делает и какую боль снимает.
+        </p>
+
+        <div class="featureList">
+          <div class="featureItem">
+            <div class="featureIcon">A</div>
+            <div>
+              <h3>FAQ и повторные вопросы</h3>
+              <p>Собирает типовые вопросы и помогает отвечать единообразно.</p>
+            </div>
+          </div>
+
+          <div class="featureItem">
+            <div class="featureIcon">B</div>
+            <div>
+              <h3>Навигация по курсу</h3>
+              <p>Помогает находить нужную тему и не теряться в материалах.</p>
+            </div>
+          </div>
+
+          <div class="featureItem">
+            <div class="featureIcon">C</div>
+            <div>
+              <h3>Разные роли</h3>
+              <p>Одна логика — разные сценарии: студент/преподаватель.</p>
+            </div>
+          </div>
+
+          <div class="featureItem">
+            <div class="featureIcon">D</div>
+            <div>
+              <h3>Учебная реализация</h3>
+              <p>Формы + валидация + имитация отправки и хранение данных (localStorage).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section">
+      <div class="container">
+        <span class="eyebrow">Процесс</span>
+        <h2>Как это работает</h2>
+        <p class="section__lead">
+          В реальном продукте ассистент работает на основе материалов курса. В учебной версии — демонстрация логики и интерфейса.
+        </p>
+
+        <ol class="steps">
+          <li><strong>Добавляются материалы курса</strong> (лекции, задания, методички).</li>
+          <li><strong>Ассистент получает контекст</strong> дисциплины и правила формата ответа.</li>
+          <li><strong>Студенты задают вопросы</strong> и получают ответы в рамках курса.</li>
+          <li><strong>Преподаватель снижает нагрузку</strong> за счёт автоматизации повторяющихся запросов.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- USECASES -->
+    <section id="usecases" class="section section--alt">
+      <div class="container">
+        <span class="eyebrow">Сценарии</span>
+        <h2>Кейсы использования</h2>
+        <p class="section__lead">
+          Три практических кейса и подсказка, как оценивать эффект.
+        </p>
+
+        <div class="cases">
+          <article class="case">
+            <h3>Кейс 1: Преподаватель</h3>
+            <p><strong>Задача:</strong> снизить повторные вопросы по заданиям и дедлайнам.</p>
+            <p><strong>Как используется:</strong> ассистент отвечает по методичке и правилам курса.</p>
+            <p><strong>Как мерить:</strong> доля FAQ-вопросов, среднее время ответа, нагрузка в чатах.</p>
+          </article>
+
+          <article class="case">
+            <h3>Кейс 2: Студент</h3>
+            <p><strong>Задача:</strong> быстрее готовиться к экзамену и разбирать темы.</p>
+            <p><strong>Как используется:</strong> уточняет термины и находит нужные разделы в лекциях.</p>
+            <p><strong>Как мерить:</strong> время поиска, пересмотры материалов, самооценка понимания.</p>
+          </article>
+
+          <article class="case">
+            <h3>Кейс 3: Администратор</h3>
+            <p><strong>Задача:</strong> стандартизировать поддержку курса и снизить хаос в коммуникациях.</p>
+            <p><strong>Как используется:</strong> единые правила ответов и база знаний курса.</p>
+            <p><strong>Как мерить:</strong> стабильность ответов, NPS/CSAT, число эскалаций.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION FORM -->
+    <section id="consult" class="section">
+      <div class="container">
+        <span class="eyebrow">Связаться</span>
+        <h2>Записаться на консультацию</h2>
+        <p class="section__lead">
+          Выберите роль, канал связи и удобное время. Если выберете Telegram — потребуется username.
+          Отправка имитируется, данные сохраняются локально.
+        </p>
+
+        <form id="consultForm" class="form">
+          <label>
+            Роль
+            <select name="role" required>
+              <option value="">Выберите</option>
+              <option value="teacher">Преподаватель</option>
+              <option value="student">Студент</option>
+              <option value="admin">Администратор</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend>Канал связи</legend>
+            <div class="radio-row">
+              <label class="radio">
+                <input type="radio" name="channel" value="telegram" required />
+                <span>Telegram</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="channel" value="email" required />
+                <span>Email</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label>
+            Контакт (email или Telegram username)
+            <input name="contact" type="text" required placeholder="@username или name@example.com" />
+          </label>
+
+          <label>
+            Предпочтительное время
+            <input name="time" type="time" required />
+          </label>
+
+          <label>
+            Комментарий
+            <textarea name="comment" required minlength="10" maxlength="400" placeholder="Коротко: курс, задача, объём материалов"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Записаться</button>
+          <p class="form__hint" id="consultHint" aria-live="polite"></p>
+        </form>
+
+        <div id="consultResult" class="result" hidden></div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <span class="eyebrow">Контакт</span>
+        <h2>Запросить демо</h2>
+        <p class="section__lead">
+          Оставьте заявку — в учебной версии мы имитируем отправку и показываем введённые данные рядом с формой.
+        </p>
+
+        <form id="demoForm" class="form">
+          <label>
+            Имя
+            <input name="name" type="text" required minlength="2" maxlength="40" placeholder="Ваше имя" />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required placeholder="name@example.com" />
+          </label>
+
+          <label>
+            Статус
+            <select name="status" required>
+              <option value="">Выберите</option>
+              <option value="teacher">Преподаватель</option>
+              <option value="student">Студент</option>
+              <option value="admin">Администратор</option>
+            </select>
+          </label>
+
+          <label>
+            Сообщение
+            <textarea name="message" required minlength="10" maxlength="500" placeholder="Коротко: какой курс, какая задача, сколько студентов/групп"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Отправить</button>
+          <p class="form__hint" id="demoHint" aria-live="polite"></p>
+        </form>
+
+        <div id="demoResult" class="result" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© CourseMind, 2025</small>
+      <div class="footer__links">
+        <a href="#hero">Наверх</a>
+        <a href="#consult">Консультация</a>
+        <a href="#contact">Демо</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
